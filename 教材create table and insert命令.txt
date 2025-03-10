@@ -1,0 +1,14 @@
+CREATE DATABASE  jdbc_demo;
+USE jdbc_demo;
+CREATE TABLE tb_user(
+		id INT PRIMARY KEY AUTO_INCREMENT,
+		username VARCHAR(40),
+		sex VARCHAR(2),	
+		email VARCHAR(60),
+		birthday DATE		
+); 
+INSERT INTO tb_user(username,sex,email,birthday) 
+                    VALUES ('张三','男','zhsan@126.com','1990-01-04'),
+                                 ('李四','男','lisi@126.com','1991-02-14'),
+                                 ('王五','女','wangwu@126.com','1999-12-28');
+
